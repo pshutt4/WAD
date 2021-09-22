@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Reptiles order form</title>
+<link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
+<script type="text/javascript">
+function doSend(){
+                   var fn = document.getElementById("fname").value;
+                   var ln = document.getElementById("lname").value;
+                   var sp = document.getElementById("species").value
+                   var site = "http://localhost:3000" + "?fname=" + fn + "&lname=" + ln + "&species=" + sp;
+                   console.log("****data from from form: "+site);
+                   location.href = site;
+           }
+</script>
+
+</head>
+<body>
+  <div id="container">
+  <div id="header">
+      <h1>Reptilian House</h1>
+      <p>Need some crickets? Here is where it's at! Need some worms? We got it!</p>
+  </div>
+  <div id="content">
+  <div class="order">
+  <form.center id="myForm" method="get">
+  <table>
+  <tr>
+    <td align="right">
+     First Name:</td><td><input id ="fname" type="text" name="fname" value="" maxlength="100" />
+    </td>
+    <td align="right">
+     Last Name:</td><td><input id = "lname" type="text" name="lname" value="" maxlength="100" />
+    </td>
+    <td align="right">
+      Choose a species:
+    </td>
+    <td>
+      <select id="species">
+        <option value="lizard">Lizard</option>
+        <option value="snake">Snake</option>
+        <option value="crickets">Crickets</option>
+        <option value="worms">Worms</option>
+       </select>
+    </td>
+   </tr>
+   <tr>
+     <td align="right">City:</td><td><input type="text" name="city" value="Pittsburgh" maxlength="40" />
+     </td>
+     <td align="right">State:</td><td><input type="text" name="state" value="PA" maxlength="3" />
+     </td>
+     <td align="right">Zip:</td><td><input type="text" name="zip" value="15122" maxlength="5" />
+     </td>
+     <td>
+
+     </td>
+    </tr>
+    <tr>
+     <td></td>
+      <td><input type="submit" onClick="doSend()" id="myButton" value="Submit"></input></td>
+     </td>
+     <td></td>
+     <td></td>
+    </tr>
+    </table>
+   </form>
+</div>
+</div>
+<div id="footer">
+  <p>Reptiles are really cool!</p>
+</div>
+</div>
+</body>
+</html>

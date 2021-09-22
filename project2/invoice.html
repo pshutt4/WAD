@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Invoice Selector</title>
+  <link rel="stylesheet" href="invoicestyle.css">
+
+</head>
+<body>
+
+<div class="invoice-box">
+  <table cellpadding="0" cellspacing="0">
+    <tr class="top">
+      <td colspan="4">
+        <table>
+          <tr>
+            <td class="title">
+              <img src="logo.PNG" style="width:100%; max-width:300px;">
+              <link rel="stylesheet" type="text/css" href="invoicestyle.css"/>
+              <script src="invoice.js"></script>
+            </td>
+
+            <td>
+              Invoice #: 123<br> Created: September 21, 2021<br> Due: September 30, 2021
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+
+    <tr class="information">
+      <td colspan="4">
+        <table>
+          <tr>
+            <td>
+              Invoice Selector<br> 784 Walnut Street<br> Pittsburgh, PA 15217
+            </td>
+
+            <td>
+              Mexicrate Corp<br> Edgar Ruiz<br> eruiz@example.com
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+
+    <tr class="heading">
+      <td colspan="3">
+        Payment Method
+      </td>
+
+      <td>
+        Check #
+      </td>
+    </tr>
+
+    <tr class="details">
+      <td colspan="3">
+        Check
+      </td>
+
+      <td>
+        1000
+      </td>
+    </tr>
+
+    <tr class="heading">
+      <td>
+        Item
+      </td>
+
+      <td>
+        Unit Cost
+      </td>
+
+      <td>
+        Quantity
+      </td>
+
+      <td>
+        Price
+      </td>
+    </tr>
+
+    <tr class="item">
+      <td>
+        <input value="crickets" />
+      </td>
+
+      <td>
+        $<input type="number" value="25" />
+      </td>
+
+      <td>
+        <input type="number" value="1" />
+      </td>
+
+      <td>
+        $25.00
+      </td>
+    </tr>
+
+    <tr class="item">
+      <td>
+        <input value="worms" />
+      </td>
+
+      <td>
+        $<input type="number" value="35" />
+      </td>
+
+      <td>
+        <input type="number" value="1" />
+      </td>
+
+      <td>
+        $35.00
+      </td>
+    </tr>
+
+    <tr class="item">
+      <td>
+        <input value="snake" />
+      </td>
+
+      <td>
+        $<input type="number" value="1" />
+      </td>
+
+      <td>
+        <input type="number" value="1" />
+      </td>
+
+      <td>
+        $40.00
+      </td>
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <button class="btn-add-row">Add row</button>
+      </td>
+    </tr>
+
+    <tr class="total">
+      <td colspan="3"></td>
+
+      <td>
+        Total: $100.00
+      </td>
+    </tr>
+  </table>
+</div>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script><script  src="invoice.js"></script>
+
+</body>
+</html>

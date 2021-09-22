@@ -1,0 +1,126 @@
+ ul.menuUL {
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
+     overflow: hidden;
+     background-color: #007d00;
+ }
+
+ li.menuLI {
+     float: left;
+ }
+
+ li.menuLI a {
+     display: block;
+     color: green;
+     text-align: center;
+     padding: 16px;
+     text-decoration: none;
+ }
+
+ li.menuLI a:hover {
+     color: white;
+     background-color: #007d00;
+ }
+html,body {
+	margin:0;
+	padding:0;
+	height:100%; /* needed for container min-height */
+
+
+	font-family:arial,sans-serif;
+	font-size:small;
+	color:#666;
+}
+
+h1 {
+	font:1.5em georgia,serif;
+	margin:0.5em 0;
+	text-align: center;
+}
+
+h2 {
+	font:1.25em georgia,serif;
+	margin:0 0 0.5em;
+}
+	h1, h2, a {
+		color:orange;
+	}
+
+p {
+	line-height:1.5;
+	margin:0 0 1em;
+}
+table.center {
+    margin-left:auto;
+    margin-right:auto;
+  }
+form.center {
+      margin-left:auto;
+      margin-right:auto;
+    }
+div#container {
+	position:relative; /* needed for footer positioning*/
+	margin:0 auto; /* center, not in IE5 */
+	width:750px;
+	background:#007d00;
+
+	height:auto !important; /* real browsers */
+	height:100%; /* IE6: treaded as min-height*/
+
+	min-height:100%; /* real browsers */
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+}
+
+div#header {
+	padding:1em;
+	background:#007d00;
+
+	border-bottom:6px double black;
+}
+	div#header p {
+		font-style:italic;
+		text-align:center;
+		font-size:1.1em;
+		margin:0;
+    color: black;
+	}
+ div#header a{
+	border: 1px solid white ;
+ 	width:75;
+ 	height:25;
+
+
+ }
+
+div#content {
+	padding:1em 1em 5em; /* bottom padding for footer */
+}
+	div#content p {
+		text-align:center;
+		color:yellow;
+		padding:0em 1em;
+	}
+
+div#footer {
+	position:absolute;
+	width:100%;
+	bottom:0; /* stick to bottom */
+	background:#007d00;
+	border-top:6px double black;
+}
+	div#footer p {
+		padding:1em;
+		margin:0;
+		text-align:center;
+    color: black;
+	}
+.order {
+color:black;
+background-color: white;
+border:6px double black;
+
+}
